@@ -8,7 +8,7 @@ function getStudentData() {
   }
 
   // Sending SID to the backend
-  fetch(`https://your-backend-url.onrender.com/student-dashboard/${sid}`)
+  fetch(`https://nirnaydashboard.onrender.com/${sid}`)
     .then(response => response.json())
     .then(data => {
       // Display student data
