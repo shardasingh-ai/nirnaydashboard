@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Activity Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Student Activity Dashboard</h1>
+
+  <!-- SID input form -->
+  <div>
+    <label for="sidInput">Enter Your SID:</label>
+    <input type="text" id="sidInput" placeholder="Enter SID" />
+    <button onclick="getStudentData()">View Dashboard</button>
+  </div>
+
+  <!-- Displaying student data -->
+  <div id="studentData" style="display:none;">
+    <h2>Student Activity</h2>
+    <p id="sidDisplay"></p>
+    <canvas id="activityChart"></canvas>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
